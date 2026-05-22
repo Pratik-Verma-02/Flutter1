@@ -1,0 +1,107 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33CC111220A0491E00B71070 /* FlutterPluginRegistrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC111120A0491E00B71070 /* FlutterPluginRegistrant.swift */; };
+		33CC111420A0492100B71070 /* FlutterPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CC111320A0492100B71070 /* FlutterPluginRegistrant.m */; };
+		3317CC4920A08BEE004E0835 /* GeneratedPluginRegistrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3317CC4820A08BEE004E0835 /* GeneratedPluginRegistrant.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3317CC4820A08BEE004E0835 /* GeneratedPluginRegistrant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedPluginRegistrant.swift; sourceTree = "<group>"; };
+		33CC111120A0491E00B71070 /* FlutterPluginRegistrant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterPluginRegistrant.swift; sourceTree = "<group>"; };
+		33CC111320A0492100B71070 /* FlutterPluginRegistrant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterPluginRegistrant.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		33CC110B20A0487600B71070 = {
+			isa = PBXGroup;
+			children = (
+				33CC110F20A0487600B71070 /* Flutter */,
+				33CC110E20A0487600B71070 /* Frameworks */,
+				33CC110D20A0487600B71070 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33CC110D20A0487600B71070 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33CC112D20A0493500B71070 /* Runner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33CC110E20A0487600B71070 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33CC112F20A0494500B71070 /* FlutterMacOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33CC110F20A0487600B71070 /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				33CC111320A0492100B71070 /* FlutterPluginRegistrant.m */,
+				33CC111120A0491E00B71070 /* FlutterPluginRegistrant.swift */,
+				3317CC4820A08BEE004E0835 /* GeneratedPluginRegistrant.swift */,
+			);
+			path = Flutter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33CC112C20A0493500B71070 /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33CC113320A0493600B71070 /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				33CC111620A0492800B71070 /* Run Script */,
+				33CC111820A0492900B71070 /* Sources */,
+				33CC111A20A0492900B71070 /* Frameworks */,
+				33CC111C20A0492A00B71070 /* Resources */,
+				33CC112720A0493200B71070 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 33CC112D20A0493500B71070 /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33CC113220A0493600B71070 /* Build configuration list for PBXProject "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33CC113420A0493600B71070 /* Debug */,
+				33CC113520A0493600B71070 /* Release */,
+				33CC113620A0493600B71070 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33CC113320A0493600B71070 /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33CC113720A0493600B71070 /* Debug */,
+				33CC113820A0493600B71070 /* Release */,
+				33CC113920A0493600B71070 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33CC110C20A0487600B71070 /* Project object */;
+}

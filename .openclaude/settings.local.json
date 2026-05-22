@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(TMPDIR=/storage/emulated/0/PrimeKeyX/tmp)",
+      "Bash(mkdir -p $TMPDIR)"
+    ]
+  }
+}
