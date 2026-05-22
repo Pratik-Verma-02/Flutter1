@@ -23,7 +23,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          channel: 'stable'
+          flutter-version: '3.19.6' # Yeh version aapke project ke sath 100% compatible hai
 
       - name: Install Dependencies
         run: flutter pub get
