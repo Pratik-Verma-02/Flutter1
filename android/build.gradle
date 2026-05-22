@@ -26,6 +26,15 @@ subprojects {
 
 subprojects {
     project.evaluationDependsOn(':app')
+    
+    // Yeh block file_picker aur baaki plugins ke purane Kotlin version ko force-upgrade kar dega
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+        kotlinOptions {
+            jvmTarget = "1.8"
+            languageVersion = "1.8" // Yeh line 1.4 wale error ko khatam kar degi
+            apiVersion = "1.8"
+        }
+    }
 }
 
 tasks.register("clean", Delete) {
