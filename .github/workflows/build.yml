@@ -28,7 +28,7 @@ jobs:
       - name: Install Dependencies
         run: flutter pub get
 
-      # YEH STEP PERMANENTLY ICON ERROR SOLVE KAREGA
+      # YEH STEP ICON BANAYEGA (Yeh pichli baar miss ho gaya tha)
       - name: Generate App Icons
         run: dart run flutter_launcher_icons
 
