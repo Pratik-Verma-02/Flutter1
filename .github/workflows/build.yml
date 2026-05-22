@@ -23,10 +23,14 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.19.6' # Yeh version aapke project ke sath 100% compatible hai
+          flutter-version: '3.19.6'
 
       - name: Install Dependencies
         run: flutter pub get
+
+      # YEH STEP PERMANENTLY ICON ERROR SOLVE KAREGA
+      - name: Generate App Icons
+        run: dart run flutter_launcher_icons
 
       - name: Build APK
         run: flutter build apk --release
