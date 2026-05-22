@@ -97,7 +97,8 @@ class JksGeneratorService {
         secureRandom,
       ));
 
-    return keyGen.generateKeyPair();
+    // Type casting added here to fix Error 2
+    return keyGen.generateKeyPair() as AsymmetricKeyPair<RSAPublicKey, RSAPrivateKey>;
   }
 
   Uint8List _generateSelfSignedCertificate({
@@ -193,12 +194,13 @@ class JksGeneratorService {
   }
 
   Uint8List _encodeLength(int length) {
+    // Uint8List.fromList() added here to fix Error 3
     if (length < 0x80) {
-      return [length];
+      return Uint8List.fromList([length]);
     } else if (length < 0x100) {
-      return [0x81, length];
+      return Uint8List.fromList([0x81, length]);
     } else {
-      return [0x82, (length >> 8) & 0xFF, length & 0xFF];
+      return Uint8List.fromList([0x82, (length >> 8) & 0xFF, length & 0xFF]);
     }
   }
 
